@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Heart, Star, MapPin, Phone, Mail, Calendar, Users, Camera, Utensils, Car, Palette, Shirt, Gift, Menu, X, Search, ChevronDown, CheckCircle } from 'lucide-react';
+import { Heart, Star, MapPin, Phone, Mail,  Users, Camera, Utensils, Car, Palette, Shirt, Gift, Menu, X,  CheckCircle } from 'lucide-react';
 import './App.css';
 
 const WeddingPlannerWebsite = () => {
