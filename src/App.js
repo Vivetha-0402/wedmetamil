@@ -30,51 +30,51 @@ const WeddingPlannerWebsite = () => {
 
   const vendors = {
     venue: [
-      { id: 1, name: 'Royal Gardens', rating: 4.8, price: '₹2,50,000', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=300', features: ['Garden View', 'AC Halls', '500+ Capacity'] },
-      { id: 2, name: 'Palace Manor', rating: 4.9, price: '₹4,00,000', location: 'Delhi', image: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=300', features: ['Heritage Property', 'Luxury Suites', '300+ Capacity'] },
-      { id: 3, name: 'Seaside Resort', rating: 4.7, price: '₹3,50,000', location: 'Goa', image: 'https://images.unsplash.com/photo-1587719371436-b0ba9add111a?w=300', features: ['Beach View', 'Pool Side', '400+ Capacity'] }
+      { id: 1, name: 'Royal Gardens', rating: 4.8, price: '₹2,50,000', location: 'Chennai', image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=300', features: ['Garden View', 'AC Halls', '500+ Capacity'] },
+      { id: 2, name: 'Palace Manor', rating: 4.9, price: '₹4,00,000', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=300', features: ['Heritage Property', 'Luxury Suites', '300+ Capacity'] },
+      { id: 3, name: 'Seaside Resort', rating: 4.7, price: '₹3,50,000', location: 'Madurai', image: 'https://images.unsplash.com/photo-1587719371436-b0ba9add111a?w=300', features: ['Beach View', 'Pool Side', '400+ Capacity'] }
     ],
     catering: [
-      { id: 1, name: 'Spice Route Catering', rating: 4.9, price: '₹800/plate', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300', features: ['Multi-Cuisine', 'Live Counters', 'Veg & Non-Veg'] },
-      { id: 2, name: 'Royal Kitchen', rating: 4.8, price: '₹1,200/plate', location: 'Delhi', image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300', features: ['Traditional Food', 'Dessert Station', 'Premium Service'] },
-      { id: 3, name: 'Coastal Delights', rating: 4.6, price: '₹950/plate', location: 'Chennai', image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300', features: ['Seafood Special', 'South Indian', 'Fresh Ingredients'] }
+      { id: 1, name: 'Spice Route Catering', rating: 4.9, price: '₹800/plate', location: 'Chennai', image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300', features: ['Multi-Cuisine', 'Live Counters', 'Veg & Non-Veg'] },
+      { id: 2, name: 'Royal Kitchen', rating: 4.8, price: '₹1,200/plate', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300', features: ['Traditional Food', 'Dessert Station', 'Premium Service'] },
+      { id: 3, name: 'Coastal Delights', rating: 4.6, price: '₹950/plate', location: 'Madurai', image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300', features: ['Seafood Special', 'South Indian', 'Fresh Ingredients'] }
     ],
     photography: [
-      { id: 1, name: 'Moments Studio', rating: 4.9, price: '₹75,000', location: 'Bangalore', image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=300', features: ['Candid Photography', 'Drone Shots', 'Same Day Edit'] },
-      { id: 2, name: 'Eternal Frames', rating: 4.8, price: '₹1,20,000', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=300', features: ['Pre-Wedding', 'Traditional', 'Destination Shoots'] },
-      { id: 3, name: 'Lens Magic', rating: 4.7, price: '₹60,000', location: 'Pune', image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=300', features: ['Cinematic Style', '4K Videos', 'Photo Albums'] }
+      { id: 1, name: 'Moments Studio', rating: 4.9, price: '₹75,000', location: 'Chennai', image: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=300', features: ['Candid Photography', 'Drone Shots', 'Same Day Edit'] },
+      { id: 2, name: 'Eternal Frames', rating: 4.8, price: '₹1,20,000', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=300', features: ['Pre-Wedding', 'Traditional', 'Destination Shoots'] },
+      { id: 3, name: 'Lens Magic', rating: 4.7, price: '₹60,000', location: 'Madurai', image: 'https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=300', features: ['Cinematic Style', '4K Videos', 'Photo Albums'] }
     ],
     makeup: [
-      { id: 1, name: 'Glam Studio', rating: 4.9, price: '₹25,000', location: 'Delhi', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300', features: ['Bridal Makeup', 'Hair Styling', 'Saree Draping'] },
-      { id: 2, name: 'Beauty Bliss', rating: 4.8, price: '₹35,000', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300', features: ['HD Makeup', 'Trial Session', 'Groom Makeup'] },
-      { id: 3, name: 'Radiant Touch', rating: 4.7, price: '₹20,000', location: 'Bangalore', image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=300', features: ['Natural Look', 'Airbrush', 'Mehendi Design'] }
+      { id: 1, name: 'Glam Studio', rating: 4.9, price: '₹25,000', location: 'Chennai', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=300', features: ['Bridal Makeup', 'Hair Styling', 'Saree Draping'] },
+      { id: 2, name: 'Beauty Bliss', rating: 4.8, price: '₹35,000', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=300', features: ['HD Makeup', 'Trial Session', 'Groom Makeup'] },
+      { id: 3, name: 'Radiant Touch', rating: 4.7, price: '₹20,000', location: 'Madurai', image: 'https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=300', features: ['Natural Look', 'Airbrush', 'Mehendi Design'] }
     ],
     outfits: [
-      { id: 1, name: 'Royal Couture', rating: 4.8, price: '₹80,000', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1594736797933-d0dc47eaa26a?w=300', features: ['Designer Lehengas', 'Custom Fitting', 'Groom Sherwanis'] },
-      { id: 2, name: 'Ethnic Elegance', rating: 4.9, price: '₹1,20,000', location: 'Delhi', image: 'https://images.unsplash.com/photo-1583391733956-6c78276477e1?w=300', features: ['Heavy Work', 'Bridal Collection', 'Jewelry Included'] },
-      { id: 3, name: 'Modern Traditions', rating: 4.6, price: '₹60,000', location: 'Jaipur', image: 'https://images.unsplash.com/photo-1566479179817-c9c6dcfc01d8?w=300', features: ['Contemporary Style', 'Light Weight', 'Quick Delivery'] }
+      { id: 1, name: 'Royal Couture', rating: 4.8, price: '₹80,000', location: 'Chennai', image: 'https://images.unsplash.com/photo-1594736797933-d0dc47eaa26a?w=300', features: ['Designer Lehengas', 'Custom Fitting', 'Groom Sherwanis'] },
+      { id: 2, name: 'Ethnic Elegance', rating: 4.9, price: '₹1,20,000', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1583391733956-6c78276477e1?w=300', features: ['Heavy Work', 'Bridal Collection', 'Jewelry Included'] },
+      { id: 3, name: 'Modern Traditions', rating: 4.6, price: '₹60,000', location: 'Madurai', image: 'https://images.unsplash.com/photo-1566479179817-c9c6dcfc01d8?w=300', features: ['Contemporary Style', 'Light Weight', 'Quick Delivery'] }
     ],
     decoration: [
-      { id: 1, name: 'Dream Decorators', rating: 4.9, price: '₹1,50,000', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=300', features: ['Floral Arrangements', 'Stage Decoration', 'Lighting Setup'] },
-      { id: 2, name: 'Fairy Tale Events', rating: 4.8, price: '₹2,00,000', location: 'Delhi', image: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=300', features: ['Theme Decoration', 'Mandap Design', 'Entry Decor'] },
-      { id: 3, name: 'Elegant Affairs', rating: 4.7, price: '₹1,20,000', location: 'Bangalore', image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=300', features: ['Minimalist Style', 'Fresh Flowers', 'Custom Themes'] }
+      { id: 1, name: 'Dream Decorators', rating: 4.9, price: '₹1,50,000', location: 'Chennai', image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=300', features: ['Floral Arrangements', 'Stage Decoration', 'Lighting Setup'] },
+      { id: 2, name: 'Fairy Tale Events', rating: 4.8, price: '₹2,00,000', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=300', features: ['Theme Decoration', 'Mandap Design', 'Entry Decor'] },
+      { id: 3, name: 'Elegant Affairs', rating: 4.7, price: '₹1,20,000', location: 'Madurai', image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=300', features: ['Minimalist Style', 'Fresh Flowers', 'Custom Themes'] }
     ],
     'car-rental': [
-      { id: 1, name: 'Luxury Rides', rating: 4.8, price: '₹15,000/day', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300', features: ['BMW 7 Series', 'Decorated Car', 'Professional Driver'] },
-      { id: 2, name: 'Royal Cars', rating: 4.9, price: '₹25,000/day', location: 'Delhi', image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=300', features: ['Vintage Rolls Royce', 'Red Carpet', 'VIP Service'] },
-      { id: 3, name: 'Classic Wheels', rating: 4.7, price: '₹12,000/day', location: 'Bangalore', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300', features: ['Mercedes E-Class', 'Flower Decoration', 'Chauffeur Service'] }
+      { id: 1, name: 'Luxury Rides', rating: 4.8, price: '₹15,000/day', location: 'Chennai', image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300', features: ['BMW 7 Series', 'Decorated Car', 'Professional Driver'] },
+      { id: 2, name: 'Royal Cars', rating: 4.9, price: '₹25,000/day', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=300', features: ['Vintage Rolls Royce', 'Red Carpet', 'VIP Service'] },
+      { id: 3, name: 'Classic Wheels', rating: 4.7, price: '₹12,000/day', location: 'Madurai', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300', features: ['Mercedes E-Class', 'Flower Decoration', 'Chauffeur Service'] }
     ],
     invitation: [
-      { id: 1, name: 'Creative Cards', rating: 4.9, price: '₹150/card', location: 'Mumbai', image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300', features: ['Custom Design', 'Premium Paper', 'Digital Version'] },
-      { id: 2, name: 'Elegant Invites', rating: 4.8, price: '₹200/card', location: 'Delhi', image: 'https://images.unsplash.com/photo-1613769049987-b31b641f25b1?w=300', features: ['Handmade Paper', 'Gold Foiling', 'Video Invites'] },
-      { id: 3, name: 'Modern Prints', rating: 4.7, price: '₹120/card', location: 'Bangalore', image: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300', features: ['Eco-Friendly', 'QR Code', 'Fast Delivery'] }
+      { id: 1, name: 'Creative Cards', rating: 4.9, price: '₹150/card', location: 'Chennai', image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=300', features: ['Custom Design', 'Premium Paper', 'Digital Version'] },
+      { id: 2, name: 'Elegant Invites', rating: 4.8, price: '₹200/card', location: 'Coimbatore', image: 'https://images.unsplash.com/photo-1613769049987-b31b641f25b1?w=300', features: ['Handmade Paper', 'Gold Foiling', 'Video Invites'] },
+      { id: 3, name: 'Modern Prints', rating: 4.7, price: '₹120/card', location: 'Madurai', image: 'https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=300', features: ['Eco-Friendly', 'QR Code', 'Fast Delivery'] }
     ]
   };
 
   const testimonials = [
-    { name: 'Priya & Rahul', location: 'Mumbai', text: 'Amazing service! Our wedding was absolutely perfect thanks to the team.', rating: 5 },
-    { name: 'Sneha & Arjun', location: 'Delhi', text: 'Professional and reliable. They handled everything beautifully.', rating: 5 },
-    { name: 'Kavya & Rohan', location: 'Bangalore', text: 'Best decision ever! Stress-free wedding planning experience.', rating: 5 }
+    { name: 'Priya & Rahul', location: 'Chennai', text: 'Amazing service! Our wedding was absolutely perfect thanks to the team.', rating: 5 },
+    { name: 'Sneha & Arjun', location: 'Coimbatore', text: 'Professional and reliable. They handled everything beautifully.', rating: 5 },
+    { name: 'Kavya & Rohan', location: 'Madurai', text: 'Best decision ever! Stress-free wedding planning experience.', rating: 5 }
   ];
 
   const handleBooking = (vendor) => {
